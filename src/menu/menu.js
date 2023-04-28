@@ -1,4 +1,4 @@
-import React, { useCallback, useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import "./menu.css";
 import axios from "axios";
@@ -18,8 +18,8 @@ const Menu = () => {
     }
   };
 
-  function add(a,b){}
-  add(1,2)
+  function add(a, b) {}
+  add(1, 2);
 
   const postRequest = async () => {
     try {
@@ -46,9 +46,6 @@ const Menu = () => {
     getRequest();
   }, []);
 
-  const name = "ghode jatra";
-
-  console.log(`festival ${name}`);
   return (
     <>
       <div className="navbar">
